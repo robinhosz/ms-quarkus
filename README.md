@@ -18,6 +18,9 @@ Here is my project of studies of micro services in quarkus, where I used several
 - [Jaeger](https://www.jaegertracing.io/)
 - [Kafka](https://kafka.apache.org/)
 - [Active MQ](https://activemq.apache.org/)
+- [Key Cloak](https://www.keycloak.org/)
+- [Mongo DB](https://www.mongodb.com/)
+- [PostgreSQL](https://www.postgresql.org/)
 <br><br>
 
 ### 🧑 Author
