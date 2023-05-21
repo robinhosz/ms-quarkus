@@ -12,6 +12,9 @@ import jakarta.validation.Valid;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
+import org.eclipse.microprofile.jwt.Claim;
+import org.eclipse.microprofile.jwt.Claims;
+import org.eclipse.microprofile.jwt.JsonWebToken;
 import org.eclipse.microprofile.metrics.annotation.Counted;
 import org.eclipse.microprofile.metrics.annotation.SimplyTimed;
 import org.eclipse.microprofile.metrics.annotation.Timed;
@@ -36,9 +39,17 @@ public class RestauranteResource {
  /*   @Inject
     private ModelMapper mapper;
 */
- @Inject
- @Channel("restaurantes")
- Emitter<String> emitter;
+    @Inject
+    @Channel("restaurantes")
+    Emitter<String> emitter;
+
+    @Inject
+    JsonWebToken jwt;
+
+    @Inject
+    @Claim(standard = Claims.sub)
+    String sub;
+
     @GET
     @Counted(name = "Quantidade buscas restaurantes")
     @SimplyTimed(name = "Tempo simples de busca")
@@ -66,7 +77,7 @@ public class RestauranteResource {
         Restaurante restaurante = new Restaurante();
         restaurante.setNome(dto.getNome());
         restaurante.setCnpj(dto.getCnpj());
-        restaurante.setProprietario(dto.getProprietario());
+        restaurante.setProprietario(sub);
 
 
         restaurante.persist();
