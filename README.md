@@ -1,5 +1,5 @@
 <h1 align="center"> 
-  <strong>Quarkus Microservices</strong>
+  <strong>Quarkus Microservices :zap:</strong>
 </h1>
 <br>
 
