@@ -4,23 +4,14 @@
 <br>
 
 ## 🔎 About the project
-Here is my project of studies of micro services in quarkus, where I used several technologies to test in this framework
-
+Simple project using I did query and mutations with graphql in spring boot, I also performed the tests of the functionalities.
  
 ## 🔧 Technologies
 
 - [Java](https://www.java.com/pt-BR/)
-- [Quarkus](https://quarkus.io/)
-- [Kibana](https://www.elastic.co/pt/kibana/)
-- [Elasti Search](https://www.elastic.co/pt/elasticsearch/)
-- [Prometheus](https://prometheus.io/docs/introduction/overview/)
-- [Grafana](https://grafana.com/)
-- [Jaeger](https://www.jaegertracing.io/)
-- [Kafka](https://kafka.apache.org/)
-- [Active MQ](https://activemq.apache.org/)
-- [Key Cloak](https://www.keycloak.org/)
-- [Mongo DB](https://www.mongodb.com/)
-- [PostgreSQL](https://www.postgresql.org/)
+- [Spring Boot]([https://quarkus.io/](https://spring.io/projects/spring-boot))
+- [GraphQL](https://graphql.org/)
+- [MySQL](https://www.mysql.com/)
 <br><br>
 
 ### 🧑 Author
